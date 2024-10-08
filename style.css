@@ -354,3 +354,30 @@ ul li{
     align-items: center;
     gap: 10px;
 }
+.close{
+    display: none !important;
+}
+.menuinput{
+    display: none !important;
+}
+
+#manuToggle:checked + label + .search-left + .logo-micro + .nav-links {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: space-around;
+    position: absolute;
+    top: 60px;
+    gap: 25px;
+    background-color:#f8f8f8;
+    width: 100%;
+    left: 0;
+    padding: 30px 5px;
+    border: #262626;
+}
+#manuToggle:checked + label .close{
+    display: block !important;
+}
+#manuToggle:checked + label .menu{
+    display: none !important;
+}
